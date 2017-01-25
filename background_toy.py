@@ -58,7 +58,7 @@ def compute_eff():
            
             #using h_eff_true, not from toys!
             r = random.random()
-            if(r>prob):
+            if(r<prob):
                 ntags+=1
 
         h_bkg_act.Fill(ntags)
