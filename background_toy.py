@@ -6,27 +6,27 @@ import itertools
 def compute_eff():
     #njet histo
     h_njet = TH1D("h_njet", "h_njet", 5, 0.5, 5.5)
-    h_njet.Fill(1, 5)
-    h_njet.Fill(2, 4)
-    h_njet.Fill(3, 3)
-    h_njet.Fill(4, 2)
-    h_njet.Fill(5, 1)
+    h_njet.SetBinContent(1, 5)
+    h_njet.SetBinContent(2, 4)
+    h_njet.SetBinContent(3, 3)
+    h_njet.SetBinContent(4, 2)
+    h_njet.SetBinContent(5, 1)
 
     #x histo
     h_x = TH1D("h_x", "h_x", 5, 0, 10)
-    h_x.Fill(1, 1)
-    h_x.Fill(2, 2)
-    h_x.Fill(3, 3)
-    h_x.Fill(4, 2)
-    h_x.Fill(5, 4)
+    h_x.SetBinContent(1, 1)
+    h_x.SetBinContent(2, 2)
+    h_x.SetBinContent(3, 3)
+    h_x.SetBinContent(4, 2)
+    h_x.SetBinContent(5, 4)
 
     #eff(x) histo
     h_eff_true = TH1D("h_eff_true", "h_eff_true", 5, 0, 10);#could be different binning
-    h_eff_true.Fill(1, 0.1)
-    h_eff_true.Fill(2, 0.2)
-    h_eff_true.Fill(3, 0.2)
-    h_eff_true.Fill(4, 0.2)
-    h_eff_true.Fill(5, 0.3)
+    h_eff_true.SetBinContent(1, 0.1)
+    h_eff_true.SetBinContent(2, 0.2)
+    h_eff_true.SetBinContent(3, 0.2)
+    h_eff_true.SetBinContent(4, 0.2)
+    h_eff_true.SetBinContent(5, 0.3)
 
     #histograms filled by the toys
     h_x_gen    = TH1D("h_x_gen",    "h_x_gen",    5, 0,   10)
